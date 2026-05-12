@@ -1,0 +1,158 @@
+.compliance-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.filter-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-select {
+  border: 2px solid #dee2e6;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.table-responsive {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-header {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.table-header th {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.action-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.action-buttons .btn-info:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.action-buttons .btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #e0a800;
+}
+
+.action-buttons .btn-danger:hover {
+  background-color: #bd2130;
+  border-color: #bd2130;
+}
+
+.badge-success {
+  background-color: #28a745;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+}
+
+.badge-primary {
+  background-color: #007bff;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.compliance-details {
+  padding: 20px 0;
+}
+
+.detail-section {
+  margin-bottom: 25px;
+}
+
+.detail-section h5 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #333;
+  min-width: 150px;
+}
+
+.detail-row .value {
+  color: #666;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-section {
+    padding: 15px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detail-row .label {
+    min-width: auto;
+  }
+
+  .detail-row .value {
+    text-align: left;
+  }
+}

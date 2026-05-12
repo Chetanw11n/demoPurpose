@@ -1,0 +1,180 @@
+.users-container {
+  padding: 20px 0;
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9ecef;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.users-header h3 {
+  font-weight: 600;
+  color: #212529;
+  font-size: 1.5rem;
+  margin: 0;
+  min-width: 150px;
+}
+
+.users-card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+
+.users-card .card-body {
+  padding: 0;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.users-table {
+  margin-bottom: 0;
+}
+
+.users-table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.users-table thead th {
+  font-weight: 600;
+  color: #495057;
+  border-color: #dee2e6;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.users-table tbody td {
+  padding: 12px 15px;
+  border-color: #dee2e6;
+  vertical-align: middle;
+  min-width: 80px;
+}
+
+.users-table tbody td:last-child {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #212529;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+/* Badge styling */
+.badge {
+  padding: 0.5em 0.75em;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-right: 5px;
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.alert-info {
+  background-color: #e7f3ff;
+  color: #004085;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .users-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .users-header h3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .users-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .users-table thead th,
+  .users-table tbody td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+
+  .users-table thead th {
+    font-size: 0.75rem;
+  }
+
+  .action-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .users-card {
+    margin-bottom: 20px;
+  }
+
+  .users-table thead th,
+  .users-table tbody td {
+    padding: 8px 6px;
+    font-size: 0.75rem;
+  }
+
+  .users-header {
+    gap: 8px;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.5em;
+    margin-right: 3px;
+  }
+}

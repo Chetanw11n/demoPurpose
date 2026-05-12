@@ -1,0 +1,86 @@
+.analytics-container {
+  padding: 20px;
+}
+/* ✅ ROOT */
+.analytics-page {
+  padding: 20px;
+}
+ 
+/* ✅ HEADER */
+.analytics-page .analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.analytics-page .input-group input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 150px;
+}
+ 
+.analytics-page .input-group button {
+  padding: 8px 16px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+ 
+/* ✅ CARDS */
+.analytics-page .cards {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+ 
+.analytics-page .card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+ 
+.analytics-page .card h4 {
+  margin-bottom: 10px;
+}
+ 
+.analytics-page .card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+ 
+.analytics-page .blue { background: #2196F3; }
+.analytics-page .green { background: #4CAF50; }
+.analytics-page .orange { background: #FF9800; }
+ 
+/* ✅ TABLE */
+.analytics-page .section {
+  margin-top: 20px;
+}
+ 
+.analytics-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+.analytics-page table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+ 
+/* ✅ CHARTS */
+.analytics-page .chart-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+ 
+.analytics-page .chart-box {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+ 

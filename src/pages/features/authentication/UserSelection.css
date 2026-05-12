@@ -1,0 +1,223 @@
+.user-selection-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.selection-card {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.selection-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.selection-subtitle {
+  font-size: 1.75rem;
+  color: #6c757d;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.selection-options {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  padding: 40px 30px;
+  border: 3px solid #e9ecef;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.option-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #007bff;
+}
+
+.citizen-card:hover {
+  border-color: #28a745;
+  background: rgba(40, 167, 69, 0.02);
+}
+
+.user-card:hover {
+  border-color: #007bff;
+  background: rgba(0, 123, 255, 0.02);
+}
+
+.option-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.citizen-icon {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.option-card.citizen-card:hover .citizen-icon {
+  background: rgba(40, 167, 69, 0.2);
+  transform: scale(1.1);
+}
+
+.user-icon {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+}
+
+.option-card.user-card:hover .user-icon {
+  background: rgba(0, 123, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.option-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+}
+
+.option-description {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.option-button {
+  margin-top: 15px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.citizen-card .option-button {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.citizen-card .option-button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.user-card .option-button {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.user-card .option-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .selection-card {
+    padding: 30px 20px;
+  }
+
+  .selection-title {
+    font-size: 1.8rem;
+  }
+
+  .selection-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .selection-options {
+    gap: 20px;
+  }
+
+  .option-card {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .option-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .option-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .selection-card {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .selection-title {
+    font-size: 1.5rem;
+  }
+
+  .selection-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .option-card {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .option-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .option-title {
+    font-size: 1.1rem;
+  }
+
+  .option-description {
+    font-size: 0.9rem;
+  }
+
+  .option-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
